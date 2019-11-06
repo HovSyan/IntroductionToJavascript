@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+ <script>function f(a,b){
+
+return a/b;
+
+ }
+function isNaN(a){
+  if(a!=a){
+    return true;
+  }
+  return false;
+}
+function determineZeroSign(a){
+  if(f(1,a)===Infinity){
+    return '+0';
+  }
+  if(f(1,a)===-Infinity){
+    return '-0';
+  }
+  return 0;
+}
+function d(a){
+  var b;
+  b=[];
+for (i=0; i<a.length ; i++) {
+  if(typeof a[i]==='string'){
+    b.push(a[i]);
+  }
+
+}
+  return b;
+
+} </script>
+</body>
+</html>
